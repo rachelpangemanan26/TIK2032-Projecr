@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Gallery section</title>
-<link rel="stylesheet" type="text/css" href="gallery.css">
+    <title>Gallery section</title>
+    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <script src="gallery.js"></script>
 </head>
 <body>
     <h1>Gallery</h1>
@@ -12,6 +13,7 @@
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
     </nav>
+
     <div class="gallery">
         <img src="https://i.pinimg.com/564x/17/95/cc/1795cc9a41c7e14aa8e23399441e87db.jpg" alt="Image 1">
         <img src="https://i.pinimg.com/564x/58/06/66/580666c22d10709a1534ea2727f4ffca.jpg" alt="Image 2">
@@ -21,6 +23,14 @@
         <img src="https://i.pinimg.com/564x/e8/cc/6f/e8cc6f6b772a1449f321a4f347501f53.jpg" alt="Image 6">
         <img src="https://i.pinimg.com/736x/bf/9d/89/bf9d8918bc9fb038f5d2bde00de2ed3f.jpg" alt="Image 7">
         <img src="https://i.pinimg.com/564x/92/50/b5/9250b5b7b5be89da4c04a86603ce44b2.jpg" alt="Image 8">
+    </div>
+
+    <div id="lightbox">
+        <div class="lightbox-content">
+            <button class="prev">&#10094;</button>
+            <img src="" alt="fullsize Image">
+            <button class="next">&#10095;</button>
+        </div>
     </div>
 </body>
 </html>

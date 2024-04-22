@@ -1,61 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica');
+
 body, h1, h2, p, nav, header, section {
     margin: 0;
     padding: 0;
 }
-  
+
 body {
-    font-family: 'Trebuchet MS', sans-serif;
-    background-color: #fff;
-    color: #2e2c2d;
-    line-height: 1;
+    font-family: 'Aclonica';
+    background-color: #fef5f8;
+    color: #ed8eb0;
+    line-height: 1.3;
 }
-  
+
 h1 {
-  background-color: #2e2c2d;
-  color: #dfb8ca;
-  padding: 11px;
-  text-align: center;
+    background-color: #ffffff;
+    color: #ed8eb0;
+    padding: 13px;
+    text-align: center;
 }
-  
+
 nav {
-    background-color: #2e2c2d;
-    padding: 10px 0;
+    background-color: #ed8eb0;
+    padding: 13px 0;
     background-size: 30px 100%;
-    border: 2px solid #000;
     position: relative;
     text-align: center;
     display: flex;
     justify-content: center;
 }
-  
+
 nav a {
-    color:#dfb8ca;
+    color: #fff;
     text-decoration: none;
     margin: 0 20px;
+    transition: color 0.5s ease;
 }
-  
+
+nav a:hover {
+    color: #3d3d3d;
+}
+
 section {
     padding: 20px;
-    align-items: center;
-    justify-content: center;
+}
+
+.about-me {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
-  
-h2, p {
-    margin-bottom: 12px;
-    text-shadow: 0 0 1.5px #000;
-    text-align: center;
+
+.text {
+    width: auto;
 }
-  
-img {
-    max-width: 100%;
-    margin-top: 10px;
+
+.profile-picture {
     width: 500px;
-    height: 350px;
+    height: 500px; 
+    overflow: hidden;
+    border-radius: 50%; 
 }
-  
-nav a:hover {
-    color: #fff;
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-  
+
+.text h2 {
+    font-size: 26px;
+    color: #3d3d3d;
+}
+
+.text p {
+    font-size: 20px; 
+    color: #3d3d3d;
+}
